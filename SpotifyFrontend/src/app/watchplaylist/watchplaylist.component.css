@@ -1,0 +1,110 @@
+.table{  
+    width: 70vw;
+    min-height : 5vw;
+    margin-top: 150px;
+    margin-left: 280px;
+    text-decoration: none;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.content {    
+    margin: auto;        
+    padding: 15px;
+    display: flex;    
+    justify-content: space-between;   
+    color: blueviolet;      
+  }
+
+  th{
+    font-weight: 50px;
+    color: blueviolet;   
+    padding-bottom: 10px;
+  }
+
+  tr{
+    padding-bottom: 10px;
+  }
+  .action {      
+    display: flex;    
+    justify-content:center;  
+    text-align: center;     
+  }
+
+  .playlistName{
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    left: 35px;
+    top: 20px;
+  }   
+
+  .playlist{
+    display: flex;
+    justify-self: left;
+  }
+
+
+  #songName{
+    display: flex;
+    justify-content: left;
+  }
+
+  #artist{
+    display: flex;
+    justify-content: left;
+  }
+
+  #genre{
+    display: flex;
+    justify-content: left;
+  }
+
+  #duration{
+    display: flex;
+    justify-content: left;
+  }
+
+  .add{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    justify-content: center;
+  }
+
+  .delete{
+    font-size: 15px;
+  }
+
+  .playIcon{
+    margin-bottom:10px;
+    font-size: 20px;
+    color: green;   
+  }
+  .mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  mat-panel-title{
+    font-weight: bolder;
+    font-size: large;   
+    color: rgb(218, 34, 218);
+  }
+
+  mat-panel-description{
+    position: absolute;
+    right: 45px;
+  }
+
+  
+app-footer{
+  position: absolute;
+  bottom: 0;
+}

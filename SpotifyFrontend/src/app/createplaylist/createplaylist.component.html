@@ -1,0 +1,19 @@
+
+<div class="container">
+    <app-header></app-header>
+    <div class="createPlaylist">
+       
+        <h2>Create Playlist</h2>
+        <div>
+            <label><strong>Playlist Name</strong></label><br />
+            <input type="text" placeholder="Enter Playlist Name" [(ngModel)]="playlistName" />
+        </div>
+       
+        <div class="button">             
+            <button class="loginButton" (click)="createPlaylist()">Submit</button>
+        </div>         
+    </div>   
+    
+
+</div>
+<app-footer></app-footer> 

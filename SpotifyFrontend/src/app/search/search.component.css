@@ -1,0 +1,23 @@
+.search{
+    width: 600px;
+    border: 2px solid azure;
+    padding:8px;
+    position: fixed;
+    left: 400px;
+    top: 14px;
+    border-radius: 30px;
+}
+
+input{
+    background:transparent;
+    margin-left: 30px;
+    border: 0px;
+    font-size: medium;
+    outline: 0px;
+    width: 550px;    
+}
+
+#search::placeholder{
+    color: azure;
+    
+}

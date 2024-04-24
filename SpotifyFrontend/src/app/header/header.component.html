@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <ul id="navlist">
+        <li>
+            <P id="navlogo">Spotify</P>
+        </li>
+        <li id="username" *ngIf="welcome">
+            Welcome {{userName}}
+        </li>
+        <li>            
+            <span id="navItems" *ngIf="checkLogin;  else Login">
+                <span><a (click)="logout()" class="navItems">Logout</a></span>
+            </span>
+            <ng-template #Login>
+                <span><a id="login" class="login" routerLink="/Login">Login</a></span>
+                <span><a class="login" routerLink="/Signup">Sign up</a></span>
+            </ng-template>
+        </li>
+    </ul>
+</nav>

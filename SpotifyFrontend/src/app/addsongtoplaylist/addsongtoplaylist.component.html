@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="container">
+    <div class="addSongToPlaylist">
+       
+        <h2>Add Song to Playlist</h2>
+        <div>
+            <label><strong>Playlist Name</strong></label><br />
+            <input type="text" placeholder="Enter Playlist Name" [(ngModel)]="playlistName" />
+        </div>       
+       
+        <div class="button">             
+            <button class="loginButton" (click)="addSongToPlaylist()">Submit</button>
+        </div>  
+       
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

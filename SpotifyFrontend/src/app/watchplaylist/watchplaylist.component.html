@@ -1,0 +1,64 @@
+<app-header></app-header>
+<div class="table">
+
+  <mat-accordion>
+    <mat-expansion-panel hideToggle (click)="getSongs(p.playlistName)" *ngFor="let p of playlistData">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Playlist : {{p.playlistName}}
+        </mat-panel-title>
+        <mat-panel-description>
+          <span (click)="deletePlaylist(p.playlistName)"><a class="delete"><mat-icon [style.color]="'red'"
+                aria-hidden="false" aria-label="Example home icon" fontIcon="delete"></mat-icon></a> </span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <table>
+        <div>
+
+          <div class="content">
+            <div>
+              <th>Song Name </th>
+              <tr id="songName" *ngFor="let s of songs"> {{s.songName}} </tr>
+            </div>
+
+            <div>
+              <th> Artist </th>
+              <tr id="artist" *ngFor="let s of songs"> {{s.artist}} </tr>
+            </div>
+
+            <div>
+              <th> Genre </th>
+              <tr id="genre" *ngFor="let s of songs"> {{s.genre}} </tr>
+            </div>
+
+            <div>
+              <th> Duration </th>
+              <tr id="duration" *ngFor="let s of songs"> {{s.duration}} </tr>
+            </div>
+
+
+            <div>
+              <th>Play</th>
+              <tr *ngFor="let s of songs" id="play"><a><svg width="20" height="20" fill="currentColor"
+                    class="bi bi-play-circle playIcon" viewBox="0 0 16 16" (click)="playSong(s.songName)">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                      d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                  </svg></a></tr>
+            </div>
+
+
+            <div>
+              <th>Delete</th>
+              <tr (click)="deleteSongToPlaylist(p.playlistName,s.songName)" *ngFor="let s of songs"><a
+                  class="delete"><mat-icon [style.color]="'red'" aria-hidden="false" aria-label="Example home icon"
+                    fontIcon="delete"></mat-icon></a> </tr>
+            </div>
+          </div>
+        </div>
+      </table>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
+<app-footer></app-footer>

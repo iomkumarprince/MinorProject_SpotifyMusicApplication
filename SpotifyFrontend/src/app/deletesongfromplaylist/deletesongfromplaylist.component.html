@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="addSongToPlaylist">
+       
+        <h2>Delete Song From Playlist</h2>
+        <div>
+            <label><strong>Playlist Name</strong></label><br />
+            <input type="text" placeholder="Enter Playlist Name" [(ngModel)]="playlistName" />
+        </div>
+
+        <div>
+            <label><strong>Song Name</strong></label><br />
+            <input type="text" placeholder="Enter Song Name" [(ngModel)]="songName" />
+        </div>
+       
+        <div class="button">             
+            <button class="loginButton" (click)="deleteSongToPlaylist()">Submit</button>
+        </div>  
+       
+    </div>
+    
+</div>
+
+

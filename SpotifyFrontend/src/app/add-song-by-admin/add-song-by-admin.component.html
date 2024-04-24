@@ -1,0 +1,30 @@
+<div class="container">
+    <form class="addSong" [formGroup]="data" (ngSubmit)="addSong()">
+        <h2>Add Song</h2>
+        <div>
+            <label><strong>Song Id</strong></label><br />
+            <input type="text" placeholder="Enter Song Id" formControlName="songId" />
+        </div>
+        <div>
+            <label><strong>Song Name</strong></label><br />
+            <input type="text" placeholder="Enter Song Name" formControlName="songName" />
+        </div>
+        <div>
+            <label><strong>Artist</strong></label><br />
+            <input type="text" placeholder="Enter Artist" formControlName="artist" />
+        </div>
+        <div>
+            <label><strong>Duration</strong></label><br />
+            <input type="text" placeholder="Enter Duration" formControlName="duration" />
+        </div>
+        <div>
+            <label><strong>Genre</strong></label><br />
+            <input type="text" placeholder="Enter Genre" formControlName="genre" />
+        </div>
+       
+        <div class="button">             
+            <button class="loginButton" [disabled]="data.invalid">Submit</button>
+        </div>        
+    </form>
+</div>
+<app-footer></app-footer>

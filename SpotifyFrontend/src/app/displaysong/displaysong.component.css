@@ -1,0 +1,27 @@
+.container-fluid{
+ display: flex;
+ justify-content: space-evenly;
+}
+
+tr{
+  padding-bottom: 10px;
+  text-align: center;
+  color: rgb(42, 45, 235);
+  padding-left: 12px;
+}
+
+th{
+  padding-top: 150px;
+  padding-bottom: 10px;
+  color: rgb(230, 20, 20); 
+}
+
+mat-icon{
+  padding-bottom: 20px;
+}
+
+
+app-footer{
+  position: absolute;
+  bottom: 0;
+}

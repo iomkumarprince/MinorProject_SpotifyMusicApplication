@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="createPlaylist">
+       
+        <h2>Song of the Playlist</h2>
+        <div>
+            <label><strong>Playlist Name</strong></label><br />
+            <input type="text" placeholder="Enter Playlist Name" [(ngModel)]="playlistName" />
+        </div>
+       
+        <div class="button">             
+            <button class="loginButton" (click)="getSongs()">Get Song</button>
+        </div>  
+       
+    </div>
+    <div *ngFor="let s of songs">
+        {{s.songName}}
+    </div>
+</div>
+

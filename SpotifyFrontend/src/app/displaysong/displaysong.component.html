@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div>
+    <table class="container-fluid">
+        <div>
+            <th>Song Id</th>
+            <tr class="row" *ngFor="let s of songs">{{s.songId}}</tr>
+        </div>
+
+        <div>
+            <th>Song Name</th>
+            <tr class="row" *ngFor="let s of songs">{{s.songName}}</tr>
+        </div>
+
+        <div>
+            <th>Artist</th>
+            <tr class="row" *ngFor="let s of songs">{{s.artist}}</tr>
+        </div>
+
+        <div>
+            <th>Genre</th>
+            <tr class="row" *ngFor="let s of songs">{{s.genre}}</tr>
+        </div>
+
+        <div>
+            <th>Duration</th>
+            <tr class="row" *ngFor="let s of songs">{{s.duration}}</tr>
+        </div>
+
+        <div>
+            <th>Play</th>
+            <tr *ngFor="let s of songs" (click)="playSong(s.songName)"><a class="delete"><mat-icon [style.color]="'red'"
+                        aria-hidden="false" aria-label="Example home icon" fontIcon="play_arrow"></mat-icon></a></tr>
+        </div>
+
+        <div>
+            <th>Delete</th>
+            <tr *ngFor="let s of songs" (click)="deleteSong(s.songName)"><a class="delete"><mat-icon
+                        [style.color]="'red'" aria-hidden="false" aria-label="Example home icon"
+                        fontIcon="delete"></mat-icon></a> </tr>
+        </div>
+
+    </table>
+</div>
+
+<app-footer></app-footer>

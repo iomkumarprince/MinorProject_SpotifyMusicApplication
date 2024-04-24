@@ -1,0 +1,9 @@
+#footer{
+    margin-left: 10px;
+    /* margin-top: 80px; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,3,41,1) 0%, rgba(172,12,58,1) 23%, rgba(207,15,62,1) 87%, rgba(238,17,66,0.9164040616246498) 100%, rgba(0,212,255,1) 100%);
+    width: 98vw;
+    color: azure;
+    text-align: center;    
+}

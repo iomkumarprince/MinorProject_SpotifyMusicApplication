@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+.navbar{
+    width: 97.5vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,3,41,1) 0%, rgba(172,12,58,1) 23%, rgba(207,15,62,1) 87%, rgba(238,17,66,0.9164040616246498) 100%, rgba(0,212,255,1) 100%);
+    min-height: 70px;
+    margin-left: 10px;    
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;   
+    top: 0px;
+    left: 0px;
+    right: 0px; 
+    z-index: 2;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);     
+}
+
+#navlist{
+    list-style-type: none;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding-top: 10px; 
+    padding: 15px;
+    width: 100%;        
+}
+
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+
+
+#navlogo{
+     font-size: 2rem;
+     color: azure;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navItems{    
+    display: flex;
+    gap:20px;     
+}
+
+.navItems{
+    color: azure;  
+    font-size: 1.2rem;
+    font-weight:400 ;
+    display: flex;
+    justify-content:flex-end;    
+}
+
+
+#greet{
+    color: azure;  
+    font-size: 1.2rem;
+    font-weight:400 ;
+    display: flex;
+    justify-content:flex-end;    
+}
+
+#login{    
+   margin-right: 20px;
+   border: 2px solid azure;
+   border-radius: 50px;
+   padding-left: 22px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 22px;       
+}
+
+#login:hover{    
+    margin-right: 20px;
+    border: 2px solid azure;
+    border-radius: 50px;
+    padding-left: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 22px;  
+    font-size: large;
+    font-weight:550;
+    background-color: azure;
+    color: rgb(219, 14, 58);     
+ }
+
+.login{
+    font-size: large;
+    color: azure;  
+}
+
+#signup{
+    padding-top: 10px;
+}
+
+#username{
+    color: azure;
+    font-size:large;  
+    text-align: center;
+}

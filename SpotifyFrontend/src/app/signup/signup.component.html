@@ -1,0 +1,93 @@
+<app-header></app-header>
+<div id="outer">    
+
+    <form [formGroup]="userregistration" >
+        <div id="name">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="First Name" formControlName="firstName">
+                <mat-error
+                    *ngIf="userregistration.get('firstname')?.touched && userregistration.get('firstName')?.invalid">
+                    <span *ngIf="userregistration.get('firstName')?.errors?.['required']" style="color: red;">
+                        First Name is required</span>
+                    <span *ngIf="userregistration.get('firstName')?.errors?.['minlength']" style="color: red;">
+                        First Name should be greater than 3 characters</span>
+
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Last Name" formControlName="lastName">
+                <mat-error
+                    *ngIf="userregistration.get('lastName')?.touched && userregistration.get('lastName')?.invalid">
+                    <span *ngIf="userregistration.get('lastName')?.errors?.['required']" style="color: red;">
+                        username is required</span>
+                    <span *ngIf="userregistration.get('lastName')?.errors?.['minlength']" style="color: red;">
+                        last name should have minimum of 2 characters</span>
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="email">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Email" formControlName="emailId">
+                <mat-error *ngIf="userregistration.get('emailId')?.touched && userregistration.get('emailId')?.invalid">
+                    <span *ngIf="userregistration.get('emailId')?.errors?.['required']" style="color: red;">
+                        EmailId is required</span>
+                    <span *ngIf="userregistration.get('emailId')?.errors?.['emailId']" style="color: red;">
+                        Enter valid emailId.</span>
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+
+        <div id="password">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Password" formControlName="password">
+                <mat-error *ngIf="password?.touched && password?.invalid">
+                    <span *ngIf="password?.errors?.['required']" style="color: red;">
+                        password is required</span>
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div id="password">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="confirm Password" formControlName="confirmPassword">
+                <div *ngIf="confirmPassword?.touched">
+                    <span style="color: red;" *ngIf="confirmPassword?.errors?.['required']">
+                        Confirm passcode is mandatory.
+                    </span>
+                    <span *ngIf="userregistration?.errors?.['mismatchname']" style="color: red;">
+                        password and confirm password should match.
+                    </span>
+                </div>
+            </mat-form-field>
+        </div>
+
+        <div id="number">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Mobile Number" pattern="[789][0-9]{9}" formControlName="mobileNo">
+                <mat-error *ngIf="userregistration.get('mobileNo')?.touched && userregistration.get('mobileNo')?.invalid">
+                    <span *ngIf="userregistration.get('mobileNo')?.errors?.['required']" style="color: red;">
+                        Mobile Number is required</span>
+                    <span *ngIf="userregistration.get('mobileNo')?.errors?.['pattern']" style="color: red;">
+                        Valid mobile number contains 10 digit starting with 7/8/9</span>
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+
+        <div id="address">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Address" formControlName="address">
+            </mat-form-field>
+        </div>
+
+        <div class="button">
+            <button mat-raised-button type="reset" color="warn">Reset</button>
+            <button mat-raised-button type="submit" color="primary"
+                [disabled]="userregistration.invalid">Submit</button>
+        </div>
+    </form>
+</div>  
+<app-footer></app-footer>

@@ -1,0 +1,46 @@
+#outer{     
+    margin-left: 500px;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+   
+}
+
+h3{
+    color:rgb(111, 111, 197);
+    font-weight: bold;
+}
+
+#name mat-form-field{
+    margin-top: 35px;
+    margin-right: 20px;
+}
+
+.email mat-form-field {
+    width: 51%;
+}
+
+#password mat-form-field{
+    margin-right: 20px;
+    width: 51%;
+}
+
+#number mat-form-field{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 51%;
+}
+
+
+#address mat-form-field{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 51%;
+}
+
+.button button{    
+    margin-right: 20px;
+    margin-left: 50px;
+    width: 120px;
+}
+

@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="container">
+    <div class="loginContainer">
+        <form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+        <div>
+            <label><strong>Email Address</strong></label><br />
+            <input type="text" placeholder="Enter Email Address" formControlName="emailId" />
+        </div><br />
+        <div>
+            <label><strong>Password</strong></label><br />
+            <input type="password" placeholder="Enter Password" formControlName="password" /><br />
+            <label class="mt-3"><small><b><a [style.textDecoration]="'underline'">Forget your password ?</a></b></small></label>
+        </div><br />
+        <div class="button">     
+           
+            <button class="loginButton" [disabled]="loginForm.invalid">LOG IN</button>
+        </div><br/><br/>
+        <hr [style.width]="'98%'"/><br/>
+        <h3><strong>Don't have an account ?</strong></h3>
+      <button class="signupButton" [style.width]="'98%'" routerLink="/Signup">SIGN UP FOR SPOTIFY</button>
+    </form>
+    </div>
+</div>
+<app-footer></app-footer>

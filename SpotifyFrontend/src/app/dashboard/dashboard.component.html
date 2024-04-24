@@ -1,0 +1,42 @@
+<div class="head">
+    <app-header></app-header>
+</div>
+<div *ngIf="admin">
+    <app-navbar></app-navbar>
+</div>
+<div class="container-fluid">
+    <div *ngFor="let c of cards" class="overlay">
+        <div class="card">
+            <img mat-card-image class="thumbnail" src="..\..\assets\music.jpg" alt="soul of music">
+            <span class="content" id="sName">{{c.songName}}</span>
+            <span class="content" id="artist">{{c.artist}} </span>
+            <span class="content" id="genre">{{c.genre}}</span>
+            <span class="content" id="duration"> {{c.duration}} min</span>
+        </div>
+        <div class="overText">
+            <a routerLink="/Login" *ngIf="!user">
+                <h3>Login to Play</h3>
+            </a>
+            <a id="play" *ngIf="user" (click)="playSong(c.songName)">
+                <svg width="20" height="20" fill="currentColor" class="bi bi-play-circle playIcon" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                </svg>
+            </a>
+
+            <a id="add" *ngIf="user" #menuButton (click)="showMenu()">
+                <mat-icon [style.color]="'azure'" [style.font-size]="'30px'" aria-hidden="false" aria-label="Example home icon" fontIcon="add"></mat-icon>
+              </a>
+              
+
+            <div *ngIf="menu" class="menu">
+                <button (click)="createPlaylist()">Create Playlist</button><br>
+                <button (click)="addSongToPlaylist(c.songName)">Add Song</button><br>
+                <button (click)="showPlaylist()">Playlist</button><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

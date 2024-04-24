@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* pseudo element  */
+.container-fluid{ 
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;    
+    padding: 30px;
+    padding-top: 7.5rem;
+    gap: 100px; 
+    overflow:none;
+    background-color: lightgrey;   
+}
+
+.card{
+    width: 180px;
+    height: 220px;
+    padding: 10px;   
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.overlay{
+    position: relative;   
+}
+
+.overText{
+    color: red;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+.overText h3{
+    font-size: 18px;
+}
+
+.overlay:hover .overText{
+    opacity: 1;
+    left: 50%;
+
+}
+
+
+.overlay::after{
+    content: 'e';
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.623);
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+.overlay:hover::after{
+    opacity: 1;
+
+}
+
+.content{
+    font-weight: bold;
+    padding-top: 8px;
+    color: midnightblue;
+}
+
+.thumbnail{
+    width: 160px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+#sName{
+    font-size:medium;
+}
+
+#duration{
+    position: relative;
+    bottom: 28px;
+    left:110px;
+    font-weight: normal;
+}
+
+#artist{
+    position: relative;
+    font-size: small;
+    bottom: 5px;  
+}
+
+#genre{
+    position: relative;
+    bottom: 0px;
+    left:0px;
+    font-weight: normal;
+}
+
+.icon{
+    position: relative;
+    bottom:22px;
+    left: 92px;   
+}
+
+.playIcon{
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 65px;
+    right: 1px;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+#add{
+    font-size: larger;
+    position: relative;
+    top: 70px;
+   right: px;
+   
+}
+
+
+.menu {
+    width: 180px;
+    background-color:rgb(107, 100, 100);
+    color: white; 
+    padding: 10px;
+    position: relative;
+    top:30px;
+    left: 10px;
+    border-radius: 10px;
+  }
+  
+  .menu button {
+    background: rgba(172, 160, 160, 0.863);
+    width: 161px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .menu button:hover {
+    background-color: rgb(206, 24, 54); 
+  }
+  
+
+  .head{
+    position: relative;
+    top:-20px;
+  }

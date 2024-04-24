@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="container">
+    <div class="deleteSong">
+        <h2>Delete Song</h2>
+    
+        <div>
+            <label><strong>Song Name</strong></label><br />
+            <input type="text" placeholder="Enter Song Name" [(ngModel)]="songName" />
+        </div>
+       
+        <div class="button">             
+            <button class="loginButton" (click)="deleteSong()">Submit</button>
+        </div>     
+    </div>
+    
+</div>
+<app-footer></app-footer>
