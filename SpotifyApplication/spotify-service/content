@@ -1,0 +1,66 @@
+{
+    "firstName": "Muskan",
+    "lastName" : "Ramchandani",
+    "emailId" : "muskanramchandani@gmail.com",
+    "password" : "muskan",
+    "mobileNo" : 9326685675,
+    "songList" : [],
+    "playlists" : []
+}
+
+{
+    "firstName": "Kumar",
+    "lastName" : "Prince",
+    "emailId" : "kumarprincelkh@gmail.com",
+    "password" : "mylove",
+    "mobileNo" : 9326688553,
+    "songList" : [],
+    "playlists" : []
+}
+
+{
+    "firstName": "Nihal",
+    "lastName" : "Mujawar",
+    "emailId" : "nihalmujawar@gmail.com",
+    "password" : "nihal",
+    "mobileNo" : 8796759876,
+    "songList" : [],
+    "playlists" : []
+}
+
+{
+    "firstName": "Sai",
+    "lastName" : "Krishna",
+    "emailId" : "saikrishna@gmail.com",
+    "password" : "sai",
+    "mobileNo" : 7867876567,
+    "songList" : [],
+    "playlists" : []
+}
+
+{
+    "songId" : 1,
+    "songName" : "Asmani rang hai...",
+    "artist" : "Bhupendra Singh",
+    "genre" : "Gazal",
+    "duration": "14:25",
+    "album":"Sunset Point"
+}
+
+{
+    "songId" : 2,
+    "songName" : "Muskan jhoothi hai...",
+    "artist" : "Suman Sridhar",
+    "genre" : "Lofi",
+    "duration": "3:17",
+    "album":"Talash"
+}
+
+{
+    "songId" : 3,
+    "songName" : "Jee le zaraa...",
+    "artist" : "Vishal Dadlani",
+    "genre" : "Lofi",
+    "duration": "3:35",
+    "album":"Talash"
+}
